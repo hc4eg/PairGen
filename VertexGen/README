@@ -1,0 +1,14 @@
+To generate e+- pairs using generate:
+1. $ rm CMakeCache.txt cmake_install.cmake
+   $ rm -r CMakeFiles
+2. $ cmake CMakeLists.txt
+   and Makefile is generated
+3. $ make
+   then generate is generated
+4. ./generate
+5. Output data are stored in events.run???.dat
+   , events.runno stores current run number 
+6. The output format is:
+   KE_p KE_q Theta_p Phi_p Theta_q Phi_q CrossSection
+   Where all Theta Phi are in spherical angle in degrees,
+   relative to beam direction, also horizontal plane Phi = 0/180 degrees
